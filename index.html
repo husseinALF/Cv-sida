@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Website</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>CV</h1>
+            <div class="menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About Me</a>
+                <a href="cv.html">My CV</a>
+                <a href="https://github.com/husseinALF?tab=repositories" target="_blank"><i
+                        class="fa fa-github fa-3x"></i></a>
+            </div>
+            <button class="hamburger">
+                <span class="material-icons">menu</span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu">
+            <a href="index.html" class="active-mobile">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About Me</a>
+            <a href="cv.html">My CV</a>
+            <a href="https://github.com/husseinALF?tab=repositories" target="_blank"><i
+                    class="fa fa-github fa-3x"></i></a>
+        </div>
+    </header>
+
+    <main class="main-home">
+        <div id="typed-strings">
+            <h2 class="main-h2"><span class="first-word">Welcome</span> <br><span class="typed"></span></h2>
+        </div>
+
+        <p class="main-text">This is just the beginning on working as a website developer. My hope for the near
+            future to be a very succesful developer and that my work will contribute to others success.</p>
+
+    </main>
+
+    <footer>
+        <figure>
+            <img src="SteveJobs.jpg" alt="A quote from Steve Jobs" class="stevejobs-img">
+            <figcaption class="stevejobs-caption">A famous quote from the man himself <b>Steve Jobs</b></figcaption>
+        </figure>
+        <p class="footer-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste, ex quisquam
+            nulla
+            mollitia vero earum alias doloribus, consectetur recusandae dicta corporis perspiciatis voluptate deserunt
+            praesentium sapiente assumenda porro aliquid!</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed('.typed', {
+            strings: ['to', 'my', 'first', 'resume',
+                'website'],
+            typeSpeed: 150,
+            backSpeed: 0,
+            loop: true
+        });
+
+    </script>
+
+</body>
+
+</html>

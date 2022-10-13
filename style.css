@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+/* Mobile first */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #2a38a4, #2940a9, #2847ae, #284eb3, #2855b8, #2c59bf, #2f5ec7, #3362ce, #3b65da, #4468e5, #4f6af1, #5a6cfc);
+}
+
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, #2a38a4, #2940a9, #2847ae, #284eb3, #2855b8, #2c59bf, #2f5ec7, #3362ce, #3b65da, #4468e5, #4f6af1, #5a6cfc);
+    color: white;
+    padding: 1rem 2rem;
+    z-index: 99;
+}
+
+nav h1 {
+    letter-spacing: 5px;
+    font-family: 'Monoton', cursive;
+    animation: fadeIn infinite 4s;
+    border: 2px rgb(203, 122, 217) solid;
+    background-color: #081738;
+    box-shadow: 3px 6px rgb(151, 65, 222);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+h1::first-letter {
+    color: rgb(75, 247, 104);
+    font-size: 2rem;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    margin: 0  -1rem;
+
+}
+
+.menu a {
+    margin: 0 1rem;
+    color: rgb(248, 248, 249);
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+
+.menu a:hover {
+    background-color: #081738;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hamburger {
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+}
+
+.hamburger span {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    
+    padding: 6rem;
+    opacity: 0;
+    transform: translateY(-100%);
+    background-color: rgb(24, 25, 91);
+    
+    transition: 0.3;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 1rem;
+    color: rgb(195, 199, 210);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.3;
+}
+.active {
+    background-color: #081738;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.active-mobile {
+    background-color: #2855b8;
+}
+
+.mobile-menu a:hover{
+    background-color: #2855b8;
+    border: whitesmoke 3px solid;
+}
+
+#typed-strings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20% 0;
+}
+
+.first-word{
+    font-size: 2em;
+    color:rgb(22, 26, 37);
+    letter-spacing: 10px;
+}
+
+
+.typed {
+    font-size: 1em;
+    color: #081738;
+}
+
+.main-text {
+    text-align: center;
+    color: #cdd9f1;
+    border-top: black 5px double;
+    border-bottom: black 5px double;
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+    padding: 2em 1em;
+    margin-bottom: 1em;
+}
+
+.stevejobs-img {
+    width: 100%;
+}
+
+figure {
+    margin-bottom: 3em;
+}
+
+.footer-content {
+    font-size: 1em;
+    font-family: 'Tangerine', cursive;
+}
+
+
+.main-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    text-align: center;
+    margin: 2em 1em;
+    color: rgb(180, 175, 175);
+}
+
+.portfolio-h2 {
+color: #f8f8fd;
+border: 4px solid rgb(203, 122, 217);
+padding: 1em 1em;
+font-size: 2em;
+margin-bottom: 1em;
+font-family: 'Silkscreen', cursive;
+}
+
+.portfolio-h2::first-letter {
+    font-size: 2.1em;
+    color: rgb(75, 247, 104);
+}
+.project-1, .project-2, .project-3 {
+    border: solid 4px rgb(255, 250, 250);
+    margin: 2em 0;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.project-1-h2, .project-2-h2, .project-3-h2 {
+    color: rgb(232, 220, 220);
+    font-size: 1.4em;
+}
+
+.project-1-img, .project-2-img, .project-3-img{
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.about-main {
+    text-align: center;
+    padding: 2em;
+    letter-spacing: 2px;
+    
+}
+
+.about-h2 {
+    font-size: 2rem;
+    color: #d7d7fc;
+    border-right: #4d66f0 5px solid;
+    border-bottom: #4d66f0 5px solid;
+    box-shadow: 5px 7px #2db4de;
+    padding: .5em;
+    margin-bottom: 2em;
+    background-image: linear-gradient(to left, #2db4de, #009dea, #0083f2, #0063f0, #2d36de);
+}
+
+.about-content {
+    font-size: 1.3rem;
+    padding: 1.3em;
+    color: #f8f8fd;
+    border: #2a38a4 solid 5px;
+    background-color: #081738;
+}
+
+.peace-emoji {
+    background-color: rgb(45, 15, 15);
+    border-radius: 8px;
+}
+
+.cv-main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 2em;
+    color: #f7f7f7;
+}
+
+.cv-h2 {
+    border: #081738 solid 3px;
+    padding: 1em;
+    background-color: rgb(26, 24, 120);
+    font-family: 'Silkscreen', cursive;
+}
+
+.img-hussein {
+    width: 40%;
+    border-radius: 50%;
+    border: #494965 solid 4px;
+
+}
+
+.cv-content {
+    border: #081738 solid 3px;
+    padding: 1em;
+    line-height: 1.5;
+    background-color: #2d36de;
+    margin: 0 1em;
+}
+
+
+.cv-h3-1, .cv-h3-2 {
+    border: #081738 solid 3px;
+    width: 45%;
+    margin: 0 auto;
+    background-color: rgb(26, 24, 120);
+    border-radius: 10px;
+}
+
+.cv-p {
+    margin: 1.5em 0;
+}
+
+strong {
+    color: #2db4de;
+}
+
+.cv-last {
+    line-height: 1.5;
+}
+
+.cv-h3-3 {
+    font-size: 2em;
+}
+
+.cv-p-last {
+    color: #d7d7fc;
+}
+
+
+/* taget från https://getcssscan.com/css-buttons-examples */
+
+.button-85 {
+padding: 0.6em 2em;
+border: none;
+outline: none;
+color: rgb(255, 255, 255);
+background: #111;
+cursor: pointer;
+position: relative;
+z-index: 0;
+border-radius: 10px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.button-85:before {
+
+content: "";
+background: linear-gradient(
+45deg,
+#ff0000,
+#ff7300,
+#fffb00,
+#48ff00,
+#00ffd5,
+#002bff,
+#7a00ff,
+#ff00c8,
+#ff0000
+);
+position: absolute;
+top: -2px;
+left: -2px;
+background-size: 400%;
+z-index: -1;
+filter: blur(5px);
+-webkit-filter: blur(5px);
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+animation: glowing-button-85 20s linear infinite;
+transition: opacity 0.3s ease-in-out;
+border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+0% {
+background-position: 0 0;
+}
+50% {
+background-position: 400% 0;
+}
+100% {
+background-position: 0 0;
+}
+}
+
+.button-85:after {
+z-index: -1;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: #222;
+left: 0;
+top: 0;
+border-radius: 10px;
+}
+
+.cv-download {
+    text-decoration: none;
+    color: #f8f8fd;
+}
+
+/* Desktop */
+
+@media (min-width:770px ) {
+    .mobile-menu, .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        gap: 3em;
+        padding: 1em 0;
+    }
+
+    .menu a {
+       font-size: 1.3em;
+    }
+
+   #typed-strings {
+    margin: 2em 2em;
+    display:block;
+    font-size: 3em;
+    
+   }
+
+   .main-h2 br {
+    display: none;
+   }
+
+   .main-text {
+    padding: 4em;
+    font-size: 3em;
+   }
+
+   .stevejobs-caption {
+    font-size: 2em;
+   }
+   
+   .footer-content {
+    font-size: 1.8em;
+   }
+
+   .project-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0;
+   }
+   
+   .portfolio-main-text {
+    align-self: flex-start;
+    width: 100%;
+    padding: 0;
+   }
+
+   .about-h2 {
+    font-size: 3.5rem;
+   }
+
+   .about-content {
+    height: 50vh;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .cv-h2 {
+    font-size: 2.3em;
+    width: 30%;
+   }
+
+   .img-hussein {
+    width: 20%;
+   }
+
+   .cv-h3-1, .cv-h3-2 {
+    width: 25%;
+    font-size: 1.5em;
+   }
+
+   .cv-content {
+    margin: 0 2em;
+   }
+}
