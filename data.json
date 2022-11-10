@@ -1,0 +1,27 @@
+{
+    "work": [
+        {
+            "job": "security guard",
+            "year": "2018-2022"
+        },
+        {
+            "job": "commissionaire",
+            "year": "2018-2018"
+        },
+        {
+            "job": "waiter",
+            "year": "2017-2017"
+        },
+        {
+            "job": "seller",
+            "year": "2014-2015"
+        }
+    ],
+    "educations": [
+        {
+            "highschool": "design gymnasiet",
+            "year": "2015-2018",
+            "focus": "tech program"
+        }
+    ]
+}
