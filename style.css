@@ -204,19 +204,19 @@ font-family: 'Silkscreen', cursive;
     font-size: 2.1em;
     color: rgb(75, 247, 104);
 }
-.project-1, .project-2, .project-3 {
+.project-1, .project-2, .project-3, .project-github {
     border: solid 4px rgb(255, 250, 250);
     margin: 2em 0;
     padding: 1em;
     border-radius: 20px;
 }
 
-.project-1-h2, .project-2-h2, .project-3-h2 {
+.project-1-h2, .project-2-h2, .project-3-h2, .project-github-h2 {
     color: rgb(232, 220, 220);
     font-size: 1.4em;
 }
 
-.project-1-img, .project-2-img, .project-3-img{
+.project-1-img, .project-2-img, .project-3-img, .project-github-img{
     width: 100%;
     height: auto;
     margin-top: 1em;
