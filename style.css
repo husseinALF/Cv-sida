@@ -175,11 +175,13 @@ figure {
     display: none;
 }
 
-.footer-content {
-    font-size: 1em;
-    font-family: 'Tangerine', cursive;
+.pic-click {
+ font-size: 2em;
+ padding: .5em;
+ background-color: #110943;
+ color: #f7f7f7;
+ border-radius: .5em;
 }
-
 
 .main-portfolio {
     display: flex;
